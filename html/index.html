@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveTracker - Chip Rastreador</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Move<span>Tracker</span></div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#vantagens">Vantagens</a>
+            <a href="#acesso">Login</a>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="conteudo">
+            <h1>Mais segurança e controle com o <span>Chip Rastreador</span></h1>
+
+            <p>
+                Conheça uma tecnologia inteligente para acompanhar
+                seus bens e dispositivos através de sistemas de rastreamento.
+            </p>
+
+            <a href="#acesso" class="botao">Começar agora</a>
+        </div>
+
+        <div class="imagem">
+            <div class="circulo"><img src="../img/movetracker.png" alt="Chip Rastreador" width="350" height="300"></div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2>Sobre o Chip Rastreador</h2>
+
+        <p>
+            O chip rastreador é uma tecnologia que permite a comunicação
+            entre dispositivos e sistemas de localização. Com ele, é
+            possível acompanhar informações de localização por meio
+            de uma plataforma compatível.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📍 Localização</h3>
+                <p>Acompanhe informações de localização dos dispositivos.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔒 Segurança</h3>
+                <p>Tenha mais controle sobre seus equipamentos e bens.</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 Tecnologia</h3>
+                <p>Utilize soluções modernas de conectividade e rastreamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vantagens" id="vantagens">
+        <h2>Por que utilizar nosso sistema?</h2>
+
+        <div class="lista">
+            <p>✔ Facilidade de acompanhamento</p>
+            <p>✔ Tecnologia de rastreamento</p>
+            <p>✔ Mais organização e controle</p>
+            <p>✔ Acesso por dispositivos compatíveis</p>
+        </div>
+    </section>
+
+    <section class="acesso" id="acesso">
+        <h2>Acesse sua conta</h2>
+
+        <div class="formulario">
+
+            <div class="abas">
+                <button onclick="mostrarLogin()">Login</button>
+                <button onclick="mostrarCadastro()">Cadastro</button>
+            </div>
+
+            <form id="login">
+                <h3>Entrar na conta</h3>
+
+                <input type="email" placeholder="Seu e-mail" required>
+
+                <input type="password" placeholder="Sua senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <form id="cadastro" class="oculto">
+                <h3>Criar uma conta</h3>
+
+                <input type="text" placeholder="Nome completo" required>
+
+                <input type="email" placeholder="Seu e-mail" required>
+
+                <input type="password" placeholder="Crie uma senha" minlength="6" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 VerdeTrack - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarLogin() {
+            document.getElementById("login").classList.remove("oculto");
+            document.getElementById("cadastro").classList.add("oculto");
+        }
+
+        function mostrarCadastro() {
+            document.getElementById("cadastro").classList.remove("oculto");
+            document.getElementById("login").classList.add("oculto");
+        }
+
+        document.getElementById("login").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Login demonstrativo! Conecte um sistema de autenticação para acessar sua conta.");
+        });
+
+        document.getElementById("cadastro").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Cadastro demonstrativo! Conecte um banco de dados para salvar os usuários.");
+        });
+    </script>
+
+</body>
+</html>
