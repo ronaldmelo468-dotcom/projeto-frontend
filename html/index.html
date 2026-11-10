@@ -1,141 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoveTracker - Chip Rastreador</title>
-    <link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chip Rastreador - MoveTracker</title>
+<meta name="description" content="MoveTracker: chip rastreador para acompanhar a localização dos seus bens e dispositivos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-    <header>
-        <div class="logo">Move<span>Tracker</span></div>
-
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#vantagens">Vantagens</a>
-            <a href="#acesso">Login</a>
-        </nav>
-    </header>
-
-    <section class="inicio" id="inicio">
-        <div class="conteudo">
-            <h1>Mais segurança e controle com o <span>Chip Rastreador</span></h1>
-
-            <p>
-                Conheça uma tecnologia inteligente para acompanhar
-                seus bens e dispositivos através de sistemas de rastreamento.
-            </p>
-
-            <a href="#acesso" class="botao">Começar agora</a>
-        </div>
-
-        <div class="imagem">
-            <div class="circulo"><img src="../img/movetracker.png" alt="Chip Rastreador" width="350" height="300"></div>
-        </div>
-    </section>
-
-    <section class="sobre" id="sobre">
-        <h2>Sobre o Chip Rastreador</h2>
-
-        <p>
-            O chip rastreador é uma tecnologia que permite a comunicação
-            entre dispositivos e sistemas de localização. Com ele, é
-            possível acompanhar informações de localização por meio
-            de uma plataforma compatível.
-        </p>
-
-        <div class="cards">
-            <div class="card">
-                <h3>📍 Localização</h3>
-                <p>Acompanhe informações de localização dos dispositivos.</p>
-            </div>
-
-            <div class="card">
-                <h3>🔒 Segurança</h3>
-                <p>Tenha mais controle sobre seus equipamentos e bens.</p>
-            </div>
-
-            <div class="card">
-                <h3>📱 Tecnologia</h3>
-                <p>Utilize soluções modernas de conectividade e rastreamento.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="vantagens" id="vantagens">
-        <h2>Por que utilizar nosso sistema?</h2>
-
-        <div class="lista">
-            <p>✔ Facilidade de acompanhamento</p>
-            <p>✔ Tecnologia de rastreamento</p>
-            <p>✔ Mais organização e controle</p>
-            <p>✔ Acesso por dispositivos compatíveis</p>
-        </div>
-    </section>
-
-    <section class="acesso" id="acesso">
-        <h2>Acesse sua conta</h2>
-
-        <div class="formulario">
-
-            <div class="abas">
-                <button onclick="mostrarLogin()">Login</button>
-                <button onclick="mostrarCadastro()">Cadastro</button>
-            </div>
-
-            <form id="login">
-                <h3>Entrar na conta</h3>
-
-                <input type="email" placeholder="Seu e-mail" required>
-
-                <input type="password" placeholder="Sua senha" required>
-
-                <button type="submit">Entrar</button>
-            </form>
-
-            <form id="cadastro" class="oculto">
-                <h3>Criar uma conta</h3>
-
-                <input type="text" placeholder="Nome completo" required>
-
-                <input type="email" placeholder="Seu e-mail" required>
-
-                <input type="password" placeholder="Crie uma senha" minlength="6" required>
-
-                <button type="submit">Cadastrar</button>
-            </form>
-
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 VerdeTrack - Todos os direitos reservados.</p>
-    </footer>
-
-    <script>
-        function mostrarLogin() {
-            document.getElementById("login").classList.remove("oculto");
-            document.getElementById("cadastro").classList.add("oculto");
-        }
-
-        function mostrarCadastro() {
-            document.getElementById("cadastro").classList.remove("oculto");
-            document.getElementById("login").classList.add("oculto");
-        }
-
-        document.getElementById("login").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Login demonstrativo! Conecte um sistema de autenticação para acessar sua conta.");
-        });
-
-        document.getElementById("cadastro").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Cadastro demonstrativo! Conecte um banco de dados para salvar os usuários.");
-        });
-    </script>
-
+<header>
+<a class="logo" href="index.html">Move<span>Tracker</span></a>
+<nav aria-label="Menu principal"><a href="index.html" aria-current="page">Início</a><a href="produto.html">Produto</a><a href="como-funciona.html">Como funciona</a><a href="aplicativo.html">Aplicativo</a><a href="recursos.html">Recursos</a><a href="contato.html">Contato</a></nav>
+</header>
+<section class="inicio">
+<div>
+<h1>Saiba onde estão seus bens, a qualquer hora.</h1>
+<p>O chip rastreador MoveTracker envia a localização dos seus dispositivos e equipamentos para uma plataforma compatível. Você acompanha tudo em um só lugar.</p>
+<div class="botoes"><a class="botao" href="como-funciona.html">Ver como funciona</a><a class="botao sec" href="aplicativo.html">Conhecer o aplicativo</a></div>
+</div>
+<div class="mapa"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=80" alt="Vista aérea de uma cidade à noite" loading="lazy" width="1000" height="800"><span class="pino" aria-hidden="true"></span>
+<div class="status"><div><strong>Chip 01 · Moto</strong><span>Localização atualizada</span></div><em>Online</em></div></div>
+</section>
+<section class="wrap">
+<h2>O que é o MoveTracker</h2>
+<p class="intro">É um chip rastreador que faz a ligação entre o seu dispositivo e um sistema de localização. Com ele, você acompanha onde cada item está e recebe avisos importantes.</p>
+<div class="grade"><article class="card"><div class="foto"><img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80" alt="Localização" loading="lazy" width="800" height="500"></div><div class="texto"><h3>Localização</h3><p>Veja a posição dos seus dispositivos no mapa.</p></div></article><article class="card"><div class="foto"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Segurança" loading="lazy" width="800" height="500"></div><div class="texto"><h3>Segurança</h3><p>Tenha mais controle sobre seus equipamentos e bens.</p></div></article><article class="card"><div class="foto"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Tecnologia" loading="lazy" width="800" height="500"></div><div class="texto"><h3>Tecnologia</h3><p>Use soluções modernas de conectividade e rastreamento.</p></div></article></div>
+</section>
+<section class="faixa"><div class="wrap split">
+<div><h2>Tudo em uma tela</h2><p>No aplicativo, você vê o mapa em tempo real, a lista dos seus objetos, o estado de cada chip e os alertas recentes.</p><p>Veja como são as telas e como usar cada uma.</p><a class="botao" href="aplicativo.html">Ver as telas</a></div>
+<div class="foto"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80" alt="Pessoa usando um aplicativo no celular" loading="lazy" width="900" height="650"></div>
+</div></section>
+<section class="chamada"><h2>Quer saber mais?</h2><p>Tire suas dúvidas sobre o chip, a instalação e o acompanhamento.</p><a class="botao" href="contato.html">Falar com a gente</a></section>
+<footer>
+<div class="rodape">
+<a class="logo" href="index.html">Move<span>Tracker</span></a>
+<nav aria-label="Menu do rodapé"><a href="index.html" aria-current="page">Início</a><a href="produto.html">Produto</a><a href="como-funciona.html">Como funciona</a><a href="aplicativo.html">Aplicativo</a><a href="recursos.html">Recursos</a><a href="contato.html">Contato</a></nav>
+</div>
+<small>© 2026 MoveTracker. Todos os direitos reservados.</small>
+</footer>
 </body>
 </html>
